@@ -27,7 +27,7 @@ class Ecslog < Formula
   end
 
   def install
-    bin.install "go-ecslog"
+    bin.install "ecslog"
   end
 
   test do
