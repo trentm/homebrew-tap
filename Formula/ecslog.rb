@@ -5,25 +5,25 @@
 class Ecslog < Formula
   desc "Pretty rendering of ecs-logging logs"
   homepage "https://github.com/trentm/go-ecslog"
-  version "0.4.0"
+  version "0.5.0"
   license "Apache-2.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/trentm/go-ecslog/releases/download/v0.4.0/ecslog_0.4.0_macos_x86_64.tar.gz"
-    sha256 "fe67e73c8ac397b5d01eb3d5fa9d1502fbf0cf49bcc796f1ceabe0454ab95200"
+    url "https://github.com/trentm/go-ecslog/releases/download/v0.5.0/ecslog_0.5.0_macos_x86_64.tar.gz"
+    sha256 "4696b5846b906ece70d7f1f5e629b92c33b693917518b9df84f13cec055ffb77"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/trentm/go-ecslog/releases/download/v0.4.0/ecslog_0.4.0_macos_arm64.tar.gz"
-    sha256 "063172f42039011eae02ca689b0dc98d7d49b74f2cc3b85fd149a315ad50b8a5"
+    url "https://github.com/trentm/go-ecslog/releases/download/v0.5.0/ecslog_0.5.0_macos_arm64.tar.gz"
+    sha256 "c0a674a61ae2364c0354e43f556c9423bc137fe5df70db23a0bcffb9c5e4ec81"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/trentm/go-ecslog/releases/download/v0.4.0/ecslog_0.4.0_linux_x86_64.tar.gz"
-    sha256 "fafa74c2792128f3449b8d12cfd005f07f3078cdf4484709197dd208654f8e94"
+    url "https://github.com/trentm/go-ecslog/releases/download/v0.5.0/ecslog_0.5.0_linux_x86_64.tar.gz"
+    sha256 "9e35140bf6556596eb30bafe150328dfd033ed512d31b11b934e8c4bc4652d86"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/trentm/go-ecslog/releases/download/v0.4.0/ecslog_0.4.0_linux_arm64.tar.gz"
-    sha256 "43602eb3c2d159935be1e3316ae061eb9f18f9781569661efba5edaaff4e3dfe"
+    url "https://github.com/trentm/go-ecslog/releases/download/v0.5.0/ecslog_0.5.0_linux_arm64.tar.gz"
+    sha256 "bb524f62147a76574614fec8f4cbf86a9bb8faf385759dec72c4fb4e2e724d1c"
   end
 
   def install
