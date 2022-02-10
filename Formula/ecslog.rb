@@ -7,7 +7,6 @@ class Ecslog < Formula
   homepage "https://github.com/trentm/go-ecslog"
   version "0.6.0"
   license "Apache-2.0"
-  bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/trentm/go-ecslog/releases/download/v0.6.0/ecslog_0.6.0_macos_x86_64.tar.gz"
